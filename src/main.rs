@@ -1,11 +1,10 @@
-#[macro_use] extern crate rocket;
-
+ # [macro_use ]extern crate rocket ;
 #[get("/")]
-fn hello() -> &'static str {
-    "Hello!"
-}
 
-#[launch]
-fn rocket() -> _ {
-    rocket::build().mount("/", routes![hello])
+ fn hi () -> & 'static str {
+    "Welcom"
+ }
+  #[launch]
+fn rocket ()-> _ {
+ rocket ::build().mount( "/", routes![hi])
 }
