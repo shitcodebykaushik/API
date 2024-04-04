@@ -3,6 +3,20 @@
 version = 3
 
 [[package]]
+name = "API"
+version = "0.1.0"
+dependencies = [
+ "actix-web",
+ "lru_time_cache",
+ "reqwest",
+ "rocket 0.5.0",
+ "rocket_contrib",
+ "serde",
+ "serde_json",
+ "tokio",
+]
+
+[[package]]
 name = "actix-codec"
 version = "0.5.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1911,20 +1925,6 @@ dependencies = [
  "wasm-bindgen-futures",
  "web-sys",
  "winreg",
-]
-
-[[package]]
-name = "rocket"
-version = "0.1.0"
-dependencies = [
- "actix-web",
- "lru_time_cache",
- "reqwest",
- "rocket 0.5.0",
- "rocket_contrib",
- "serde",
- "serde_json",
- "tokio",
 ]
 
 [[package]]
